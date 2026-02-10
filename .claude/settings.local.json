@@ -5,7 +5,8 @@
       "Bash(npm install:*)",
       "WebFetch(domain:greensoftware.foundation)",
       "WebFetch(domain:amadeus.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git push:*)"
     ]
   }
 }
