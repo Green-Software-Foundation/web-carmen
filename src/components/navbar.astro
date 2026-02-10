@@ -1,0 +1,42 @@
+---
+import { Button } from "@/components/ui/button";
+import NavigationComponent from "@/components/react/navbar";
+
+import Logo from "@/assets/sci-logo.svg";
+import GithubIcon from "@/assets/github-icon-navbar.svg";
+import GSFLogo from "@/assets/gsf-logo.svg";
+---
+
+<header class="container pt-5">
+  <div class="border-b border-primary-lighter pb-3">
+    <div class="flex items-center justify-center gap-3 text-xs md:justify-end">
+      <span>Project By</span>
+      <a
+        href="https://greensoftware.foundation"
+        class="block"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="h-16 w-auto"
+      >
+        <GSFLogo />
+      </a>
+    </div>
+  </div>
+  <div class="flex items-center justify-between py-4">
+    <a href="#" class="block shrink-0">
+      <Logo class="h-16 w-auto" />
+    </a>
+    <div class="flex items-center gap-1">
+      <NavigationComponent client:load />
+      <a
+        href="https://github.com/AmadeusITGroup/carmen"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className="p-2">
+          <GithubIcon />
+        </Button>
+      </a>
+    </div>
+  </div>
+</header>

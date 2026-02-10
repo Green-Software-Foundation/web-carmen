@@ -1,0 +1,63 @@
+---
+import { Button } from "@/components/ui/button";
+---
+
+<section id="overview" class="py-10">
+  <div class="container">
+    <div
+      class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center"
+    >
+      <div>
+        <h1 class="text-3xl font-extrabold md:text-4xl lg:text-5xl">
+          Measure Your Cloud's Carbon Impact with
+          <span class="text-primary">Carmen</span>
+        </h1>
+        <h6 class="mt-3 text-2xl font-bold text-black md:mt-4">
+          Open-source carbon measurement for cloud infrastructure and Kubernetes workloads
+        </h6>
+        <p class="mt-5 text-lg font-normal md:mt-6 md:text-xl lg:text-2xl">
+          Carmen (Carbon Measurement Engine) is an open-source tool developed by Amadeus engineers that measures the carbon footprint of cloud-based software at both infrastructure and application levels. Track emissions from VMs to individual Kubernetes pods, integrate with your existing Prometheus monitoring, and make data-driven decisions to reduce your environmental impact.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-4 md:mt-8">
+          <Button>
+            <a
+              href="https://github.com/AmadeusITGroup/carmen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </Button>
+          <Button variant="outline">
+            <a
+              href="https://github.com/AmadeusITGroup/carmen#getting-started"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Started
+            </a>
+          </Button>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          src="/assets/hero-illustration.svg"
+          class="shrink-0 object-cover"
+        />
+      </div>
+    </div>
+    <div class="mt-10 hidden lg:flex lg:items-center lg:justify-center">
+      <canvas id="hero-decor" style="width: 36px; height: 70px;"></canvas>
+    </div>
+  </div>
+</section>
+<script>
+  import { DotLottie } from "@lottiefiles/dotlottie-web";
+
+  const dotLottie = new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.querySelector("#hero-decor") as HTMLCanvasElement,
+    src: "/assets/hero-decor.lottie",
+  });
+</script>

@@ -1,0 +1,104 @@
+---
+import GridIcon from "@/assets/grid-stability-icon.svg";
+import CO2Icon from "@/assets/co2-icon.svg";
+import CostIcon from "@/assets/cost-icon.svg";
+import InfraIcon from "@/assets/infra-icon.svg";
+
+import WhyWdpcBackgroundIcon from "@/assets/why-wdpc-background.svg";
+
+const whyCarmenFeatures = [
+  {
+    icon: CostIcon,
+    description: `<span class="font-extrabold">Reduce Infrastructure Costs</span> - Identify energy-intensive workloads and optimize resource allocation to lower cloud computing costs`,
+  },
+  {
+    icon: CO2Icon,
+    description: `<span class="font-extrabold">Measure What Matters</span> - Track carbon emissions at both VM and pod level with granular, actionable data`,
+  },
+  {
+    icon: GridIcon,
+    description: `<span class="font-extrabold">Seamless Integration</span> - Works with your existing Kubernetes and Prometheus infrastructure—no platform lock-in`,
+  },
+  {
+    icon: InfraIcon,
+    description: `<span class="font-extrabold">Open Source & Transparent</span> - MIT licensed with full visibility into measurement methodology and calculations`,
+  },
+];
+---
+
+<!-- Why Carmen Matters -->
+<section id="why-carmen">
+  <div class="container mx-auto max-w-3xl text-center">
+    <h1 class="mb-3 text-2xl font-semibold md:mb-4 md:text-3xl lg:text-4xl">
+      Why
+      <span class="font-bold text-primary">Carmen</span>
+      Matters
+    </h1>
+    <p class="text-xl">
+      Cloud infrastructure's carbon footprint is invisible but massive—and growing with every deployment. Carmen makes it measurable.
+    </p>
+  </div>
+</section>
+
+<!-- Industry Impact -->
+<section class="py-8 md:py-10 lg:py-12">
+  <div class="container">
+    <div class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
+      <div>
+        <h1 class="mb-2 text-2xl font-semibold text-primary md:text-3xl">Cloud Infrastructure's Hidden Cost</h1>
+        <p>
+          Every virtual machine, every Kubernetes pod, every cloud service contributes to your organization's carbon footprint. Carmen makes this invisible impact visible and actionable. By measuring carbon emissions at both infrastructure and application levels, it enables you to understand exactly where your emissions come from—from individual workloads to entire data centers. Built by Amadeus engineers and contributed to the Green Software Foundation, Carmen brings enterprise-grade carbon measurement to any organization running cloud infrastructure.
+        </p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/assets/why-wdpc-feat-1.svg" class="shrink-0 object-cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Business Benefits -->
+<section class="py-8 md:py-10 lg:py-12">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
+      <div class="order-2 md:order-1 flex items-center justify-center">
+        <img src="/assets/why-wdpc-feat-2.svg" class="object-cover" />
+      </div>
+      <div class="order-1 md:order-2">
+        <h1 class="mb-3 text-2xl font-semibold text-primary md:mb-4 md:text-3xl">
+          Business Benefits
+        </h1>
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 py-2">
+          {
+            whyCarmenFeatures.map((feature) => (
+              <div class="flex items-start justify-start gap-3">
+                <div class="relative flex w-16 items-center justify-center p-3">
+                  <feature.icon class="relative h-8 w-8" />
+                  <WhyWdpcBackgroundIcon class="absolute inset-0 size-full" />
+                </div>
+                <p set:html={feature.description} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Environmental Impact -->
+<section class="py-8 md:py-10 lg:py-12">
+  <div class="container">
+    <div class="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
+      <div>
+        <h1 class="mb-2 text-2xl font-semibold text-primary md:text-3xl">Make Real Impact</h1>
+        <p>
+          You can't improve what you don't measure. Carmen gives you the data you need to make meaningful reductions in your cloud infrastructure's carbon emissions. Identify the most energy-intensive workloads, optimize resource allocation, and track improvements over time. Built on the Green Software Foundation's Impact Framework and leveraging proven methodologies, Carmen helps you move from sustainability aspirations to measurable action—reducing both your environmental impact and your cloud costs.
+        </p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/assets/why-wdpc-feat-3.svg" class="shrink-0 object-cover" />
+      </div>
+    </div>
+  </div>
+</section>

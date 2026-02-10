@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:greensoftware.foundation)",
+      "WebFetch(domain:amadeus.com)",
+      "WebSearch"
+    ]
+  }
+}
