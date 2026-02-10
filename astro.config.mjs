@@ -12,7 +12,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://astro.build/config
 export default defineConfig({
   site: 'https://greensoftware.foundation',
-  base: '/web-carmen',
+  base: process.env.NODE_ENV === 'production' ? '/web-carmen' : undefined,
   vite: {
     plugins: [tailwindcss()],
   },
