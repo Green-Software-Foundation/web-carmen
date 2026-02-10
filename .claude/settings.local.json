@@ -6,7 +6,11 @@
       "WebFetch(domain:greensoftware.foundation)",
       "WebFetch(domain:amadeus.com)",
       "WebSearch",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git reset:*)",
+      "Bash(find:*)"
     ]
   }
 }
