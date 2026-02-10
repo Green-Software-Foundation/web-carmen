@@ -4,7 +4,7 @@ import LinkedInIcon from "@/assets/linkedin-icon.svg";
 
 const teamMembers = [
   {
-    memberHeadshot: "/assets/navveen.jpeg",
+    memberHeadshot: import.meta.env.BASE_URL + "assets/navveen.jpeg",
     name: "Navveen Balani",
     title: "Software Standards Working Group Chair",
     description: "@Accenture",
@@ -14,7 +14,7 @@ const teamMembers = [
     },
   },
   {
-    memberHeadshot: "/assets/henry.jpeg",
+    memberHeadshot: import.meta.env.BASE_URL + "assets/henry.jpeg",
     name: "Henry Richardson",
     title: "Software Standards Working Group Chair",
     description: "@Watt Time",
@@ -55,5 +55,5 @@ const teamMembers = [
       }
     </div>
   </div>
-  <img class="absolute -top-1/2 right-0 -z-10 hidden lg:block" src="/assets/team-decor.svg" />
+  <img class="absolute -top-1/2 right-0 -z-10 hidden lg:block" src={import.meta.env.BASE_URL + "assets/team-decor.svg"} />
 </section>

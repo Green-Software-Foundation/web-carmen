@@ -3,6 +3,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const stories = [
   {
     title: "Implementing SCI to Track Software Emissions",
@@ -10,7 +12,7 @@ const stories = [
     description: "Accenture applied SCI to calculate and track carbon emissions for an internal reference application, establishing a practical baseline methodology that includes embodied emissions.",
     link: "https://greensoftware.foundation/articles/how-accenture-implemented-the-sci-specification-score-to-track-software-emissions",
     cta: "Read Case Study",
-    thumbnail: "/assets/logos/accenture.svg" // Placeholder, will need to handle images
+    thumbnail: BASE_URL + "assets/logos/accenture.svg"
   },
   {
     title: "Baselining Software Carbon Emissions",
@@ -18,7 +20,7 @@ const stories = [
     description: "UBS demonstrates applying SCI to baseline carbon emissions for two enterprise applications in investment banking and asset management, identifying available data sources and calculation methodologies.",
     link: "https://greensoftware.foundation/articles/baselining-software-carbon-emissions-ubs-use-case",
     cta: "Read Case Study",
-    thumbnail: "/assets/logos/ubs.svg"
+    thumbnail: BASE_URL + "assets/logos/ubs.svg"
   },
   {
     title: "Decarbonizing Software with SCI",
@@ -26,7 +28,7 @@ const stories = [
     description: "CAST integrated SCI with CAST Highlight to decarbonize an enterprise application, achieving an estimated 400 kg annual CO2 reduction and 5% improvement in execution duration.",
     link: "https://greensoftware.foundation/articles/decarbonizing-software-how-cast-applied-the-sci-metric",
     cta: "Read Case Study",
-    thumbnail: "/assets/logos/cast.svg"
+    thumbnail: BASE_URL + "assets/logos/cast.svg"
   },
   {
     title: "Calculating Carbon Footprint for Serverless Apps",
@@ -34,7 +36,7 @@ const stories = [
     description: "A practical guide to measuring carbon emissions of serverless applications using the SCI specification, with step-by-step methodology for event-driven architectures.",
     link: "https://greensoftware.foundation/articles/calculating-your-carbon-footprint-a-guide-to-measuring-serverless-app-emissions-o",
     cta: "Read Guide",
-    thumbnail: "/assets/logos/nttdata.svg"
+    thumbnail: BASE_URL + "assets/logos/nttdata.svg"
   },
   {
     title: "Carbon-Aware Computing at UBS",
@@ -42,7 +44,7 @@ const stories = [
     description: "UBS and Microsoft implemented the first enterprise-scale carbon-aware computing system, using SCI and the Carbon Aware SDK to reduce emissions in their core risk platform workloads.",
     link: "https://news.microsoft.com/de-ch/carbon-aware-computing-whitepaper/",
     cta: "Read Whitepaper",
-    thumbnail: "/assets/logos/ubs-microsoft.svg"
+    thumbnail: BASE_URL + "assets/logos/ubs-microsoft.svg"
   },
   {
     title: "Embedding SCI in Azure Architecture",
@@ -50,7 +52,7 @@ const stories = [
     description: "Microsoft integrated SCI into the Azure Well-Architected Framework, providing sustainability guidance and measurement tools for Azure customers to design carbon-efficient workloads.",
     link: "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-design-methodology",
     cta: "View Framework",
-    thumbnail: "/assets/logos/microsoft.svg"
+    thumbnail: BASE_URL + "assets/logos/microsoft.svg"
   }
 ];
 

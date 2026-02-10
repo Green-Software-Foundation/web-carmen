@@ -41,7 +41,7 @@ import { Button } from "@/components/ui/button";
       </div>
       <div class="flex items-center justify-center">
         <img
-          src="/assets/hero-illustration.svg"
+          src={import.meta.env.BASE_URL + "assets/hero-illustration.svg"}
           class="shrink-0 object-cover"
         />
       </div>
@@ -58,6 +58,6 @@ import { Button } from "@/components/ui/button";
     autoplay: true,
     loop: true,
     canvas: document.querySelector("#hero-decor") as HTMLCanvasElement,
-    src: "/assets/hero-decor.lottie",
+    src: import.meta.env.BASE_URL + "assets/hero-decor.lottie",
   });
 </script>
